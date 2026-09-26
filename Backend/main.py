@@ -17,8 +17,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = joblib.load("../model/heart_disease_model.pkl")
-scaler = joblib.load("../model/scaler.pkl")
+model = joblib.load("model/heart_disease_model.pkl")
+scaler = joblib.load("model/scaler.pkl")
 
 
 class HeartDiseaseInput(BaseModel):
