@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CardioSense — Heart Health Assessment</title>
+<meta name="description" content="Explore your heart health using commonly measured cardiovascular health parameters.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23F7F6F2' stroke='%2316324F' stroke-width='2'/%3E%3Cpath d='M6 16h5l2-6 3 11 2-7 1.5 2H26' fill='none' stroke='%234F8B7C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <a class="brand" href="#top" aria-label="CardioSense home">
+
+      <svg class="brand-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M6 16h5l2-6 3 11 2-7 1.5 2H26"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+      </svg>
+
+      <span class="brand-name">CardioSense</span>
+
+    </a>
+
+    <button class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu">
+
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+
+      <span class="sr-only">Menu</span>
+
+    </button>
+
+    <nav class="site-nav" aria-label="Primary">
+
+      <ul id="nav-menu" class="nav-menu">
+
+        <li>
+          <a href="#top">Home</a>
+        </li>
+
+        <li>
+          <a href="#assessment">Assessment</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li class="nav-menu-cta">
+          <a href="#assessment" class="btn btn-primary btn-small">
+            Start Assessment
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <a href="#assessment" class="btn btn-primary header-cta">
+      Start Assessment
+    </a>
+
+  </div>
+</header>
+
+
+<main id="main">
+
+  <section class="hero" id="top">
+
+    <div class="section-inner hero-inner">
+
+      <div class="hero-copy">
+
+        <h1>
+          Know Your Heart. Understand Your Health.
+        </h1>
+
+        <p class="hero-sub">
+          Explore your cardiovascular health through commonly measured
+          heart health parameters and receive a personalized model-based assessment.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#assessment" class="btn btn-primary btn-large">
+            Start Assessment
+          </a>
+
+          <a href="#how-it-works" class="text-link">
+            Learn How It Works
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual" aria-hidden="true">
+
+        <svg viewBox="0 0 480 480" width="100%" height="100%">
+
+          <circle
+            cx="240"
+            cy="240"
+            r="176"
+            fill="none"
+            stroke="#DBD7CF"
+            stroke-width="1"
+          />
+
+          <circle
+            cx="240"
+            cy="240"
+            r="136"
+            fill="none"
+            stroke="#16324F"
+            stroke-width="1"
+            opacity="0.22"
+          />
+
+          <circle
+            cx="240"
+            cy="240"
+            r="96"
+            fill="none"
+            stroke="#4F8B7C"
+            stroke-width="1"
+            opacity="0.3"
+          />
+
+          <polyline
+            class="ecg-line"
+            points="70,240 148,240 172,196 202,304 230,150 258,330 284,240 410,240"
+            fill="none"
+            stroke="#16324F"
+            stroke-width="3.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <circle
+            class="ecg-point ecg-point-one"
+            cx="230"
+            cy="150"
+            r="5"
+            fill="#4F8B7C"
+          />
+
+          <circle
+            class="ecg-point ecg-point-two"
+            cx="258"
+            cy="330"
+            r="5"
+            fill="#4F8B7C"
+          />
+
+        </svg>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="trust-strip">
+
+    <div class="section-inner trust-inner">
+
+      <div class="trust-item">
+
+        <span class="trust-figure">
+          13
+        </span>
+
+        <span class="trust-label">
+          Clinical Parameters
+        </span>
+
+      </div>
+
+
+      <div class="trust-item">
+
+        <span class="trust-figure">
+          01
+        </span>
+
+        <span class="trust-label">
+          Assessment Model
+        </span>
+
+      </div>
+
+
+      <div class="trust-item">
+
+        <span class="trust-figure">
+          Fast
+        </span>
+
+        <span class="trust-label">
+          Response
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="assessment" id="assessment">
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <h2>
+          Heart Health Assessment
+        </h2>
+
+        <p>
+          Enter the requested health parameters to receive an automated
+          model-based assessment.
+        </p>
+
+      </div>
+
+
+      <form id="assessment-form" novalidate>
+
+
+        <fieldset class="form-section">
+
+          <legend>
+            Personal Information
+          </legend>
+
+          <div class="field-grid">
+
+            <div class="field">
+
+              <label for="age">
+                Age
+              </label>
+
+              <input
+                type="number"
+                id="age"
+                name="age"
+                inputmode="numeric"
+                min="18"
+                max="100"
+                step="1"
+                required
+                aria-describedby="age-help"
+              >
+
+              <p class="field-help" id="age-help">
+                In years
+              </p>
+
+              <p class="field-error"
+                 id="age-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="sex">
+                Sex
+              </label>
+
+              <select
+                id="sex"
+                name="sex"
+                required
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="1">
+                  Male
+                </option>
+
+                <option value="0">
+                  Female
+                </option>
+
+              </select>
+
+              <p class="field-error"
+                 id="sex-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+        <fieldset class="form-section">
+
+          <legend>
+            Vital Measurements
+          </legend>
+
+          <div class="field-grid">
+
+            <div class="field">
+
+              <label for="resting_bp">
+                Resting Blood Pressure
+              </label>
+
+              <input
+                type="number"
+                id="resting_bp"
+                name="resting_bp"
+                inputmode="numeric"
+                min="80"
+                max="220"
+                step="1"
+                required
+                aria-describedby="resting_bp-help"
+              >
+
+              <p class="field-help" id="resting_bp-help">
+                Systolic, in mm Hg
+              </p>
+
+              <p class="field-error"
+                 id="resting_bp-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="max_heart_rate">
+                Maximum Heart Rate
+              </label>
+
+              <input
+                type="number"
+                id="max_heart_rate"
+                name="max_heart_rate"
+                inputmode="numeric"
+                min="60"
+                max="220"
+                step="1"
+                required
+                aria-describedby="max_heart_rate-help"
+              >
+
+              <p class="field-help" id="max_heart_rate-help">
+                Highest heart rate achieved during exercise, in bpm
+              </p>
+
+              <p class="field-error"
+                 id="max_heart_rate-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+        <fieldset class="form-section">
+
+          <legend>
+            Laboratory Measurements
+          </legend>
+
+          <div class="field-grid">
+
+            <div class="field">
+
+              <label for="cholesterol">
+                Cholesterol
+              </label>
+
+              <input
+                type="number"
+                id="cholesterol"
+                name="cholesterol"
+                inputmode="numeric"
+                min="100"
+                max="600"
+                step="1"
+                required
+                aria-describedby="cholesterol-help"
+              >
+
+              <p class="field-help" id="cholesterol-help">
+                Serum cholesterol, in mg/dl
+              </p>
+
+              <p class="field-error"
+                 id="cholesterol-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="fasting_blood_sugar">
+                Fasting Blood Sugar
+              </label>
+
+              <select
+                id="fasting_blood_sugar"
+                name="fasting_blood_sugar"
+                required
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="1">
+                  Greater than 120 mg/dl
+                </option>
+
+                <option value="0">
+                  120 mg/dl or lower
+                </option>
+
+              </select>
+
+              <p class="field-error"
+                 id="fasting_blood_sugar-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+        <fieldset class="form-section">
+
+          <legend>
+            Cardiac Indicators
+          </legend>
+
+          <div class="field-grid">
+
+
+            <div class="field">
+
+              <label for="chest_pain">
+                Chest Pain Type
+              </label>
+
+              <select
+                id="chest_pain"
+                name="chest_pain"
+                required
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="1">
+                  Typical Angina
+                </option>
+
+                <option value="2">
+                  Atypical Angina
+                </option>
+
+                <option value="3">
+                  Non-anginal Pain
+                </option>
+
+                <option value="4">
+                  Asymptomatic
+                </option>
+
+              </select>
+
+              <p class="field-error"
+                 id="chest_pain-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="resting_ecg">
+                Resting ECG
+              </label>
+
+              <select
+                id="resting_ecg"
+                name="resting_ecg"
+                required
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="0">
+                  Normal
+                </option>
+
+                <option value="1">
+                  ST-T Wave Abnormality
+                </option>
+
+                <option value="2">
+                  Left Ventricular Hypertrophy
+                </option>
+
+              </select>
+
+              <p class="field-error"
+                 id="resting_ecg-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="exercise_angina">
+                Exercise-Induced Angina
+              </label>
+
+              <select
+                id="exercise_angina"
+                name="exercise_angina"
+                required
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="1">
+                  Yes
+                </option>
+
+                <option value="0">
+                  No
+                </option>
+
+              </select>
+
+              <p class="field-error"
+                 id="exercise_angina-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="oldpeak">
+                Oldpeak
+              </label>
+
+              <input
+                type="number"
+                id="oldpeak"
+                name="oldpeak"
+                inputmode="decimal"
+                min="0"
+                max="10"
+                step="0.1"
+                required
+                aria-describedby="oldpeak-help"
+              >
+
+              <p class="field-help" id="oldpeak-help">
+                ST depression induced by exercise, relative to rest
+              </p>
+
+              <p class="field-error"
+                 id="oldpeak-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="slope">
+                Slope
+              </label>
+
+              <select
+                id="slope"
+                name="slope"
+                required
+                aria-describedby="slope-help"
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="1">
+                  Upsloping
+                </option>
+
+                <option value="2">
+                  Flat
+                </option>
+
+                <option value="3">
+                  Downsloping
+                </option>
+
+              </select>
+
+              <p class="field-help" id="slope-help">
+                Slope of the peak exercise ST segment
+              </p>
+
+              <p class="field-error"
+                 id="slope-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="ca">
+                CA
+              </label>
+
+              <input
+                type="number"
+                id="ca"
+                name="ca"
+                inputmode="numeric"
+                min="0"
+                max="3"
+                step="1"
+                required
+                aria-describedby="ca-help"
+              >
+
+              <p class="field-help" id="ca-help">
+                Number of major vessels (0–3) colored by fluoroscopy
+              </p>
+
+              <p class="field-error"
+                 id="ca-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+
+            <div class="field">
+
+              <label for="thal">
+                Thal
+              </label>
+
+              <select
+                id="thal"
+                name="Thal"
+                required
+                aria-describedby="thal-help"
+              >
+
+                <option value="" disabled selected>
+                  Select…
+                </option>
+
+                <option value="3">
+                  Normal
+                </option>
+
+                <option value="6">
+                  Fixed Defect
+                </option>
+
+                <option value="7">
+                  Reversible Defect
+                </option>
+
+              </select>
+
+              <p class="field-help" id="thal-help">
+                Thalassemia test result
+              </p>
+
+              <p class="field-error"
+                 id="thal-error"
+                 role="alert">
+              </p>
+
+            </div>
+
+          </div>
+
+        </fieldset>
+
+
+        <div class="form-actions">
+
+          <p
+            class="form-status"
+            id="form-status"
+            role="status"
+            aria-live="polite">
+          </p>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-large"
+            id="submit-btn"
+          >
+
+            <span class="btn-label">
+              Run Assessment
+            </span>
+
+            <span
+              class="btn-spinner"
+              aria-hidden="true">
+            </span>
+
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+
+  <section
+    class="result-section"
+    id="result-section"
+    hidden
+  >
+
+    <div class="section-inner">
+
+      <div
+        class="result-card"
+        id="result-card"
+      >
+
+        <h2>
+          Result
+        </h2>
+
+        <p
+          class="result-message"
+          id="result-message">
+        </p>
+
+
+        <div class="result-probability">
+
+          <div class="probability-header">
+
+            <span>
+              Disease Probability
+            </span>
+
+            <span
+              class="probability-value"
+              id="probability-value">
+            </span>
+
+          </div>
+
+
+          <div class="probability-meter">
+
+            <div
+              class="probability-fill"
+              id="probability-fill">
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <p class="result-note">
+          Model-estimated probability based on the submitted parameters.
+        </p>
+
+
+        <button
+          type="button"
+          class="btn btn-secondary"
+          id="new-assessment-btn"
+        >
+          Start a New Assessment
+        </button>
+
+      </div>
+
+
+      <div
+        class="error-card"
+        id="error-card"
+        hidden
+        role="alert"
+      >
+
+        <h2>
+          Unable to Complete Assessment
+        </h2>
+
+        <p id="error-message"></p>
+
+        <button
+          type="button"
+          class="btn btn-secondary"
+          id="dismiss-error-btn"
+        >
+          Try Again
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section
+    class="how-it-works"
+    id="how-it-works"
+  >
+
+    <div class="section-inner">
+
+      <div class="section-heading">
+
+        <h2>
+          How It Works
+        </h2>
+
+        <p>
+          The assessment follows the same machine learning pipeline
+          used during model training.
+        </p>
+
+      </div>
+
+
+      <ol class="steps">
+
+        <li class="step">
+
+          <span class="step-number">
+            01
+          </span>
+
+          <h3>
+            Enter Health Parameters
+          </h3>
+
+          <p>
+            The system collects 13 cardiovascular parameters such as
+            age, blood pressure, cholesterol, chest pain type,
+            maximum heart rate and other cardiac indicators.
+          </p>
+
+        </li>
+
+
+        <li class="step">
+
+          <span class="step-number">
+            02
+          </span>
+
+          <h3>
+            Scale & Predict
+          </h3>
+
+          <p>
+            The submitted values are passed through the trained
+            StandardScaler and then given to the trained
+            Support Vector Machine model for classification.
+          </p>
+
+        </li>
+
+
+        <li class="step">
+
+          <span class="step-number">
+            03
+          </span>
+
+          <h3>
+            Generate Result
+          </h3>
+
+          <p>
+            The SVM uses predict() to determine the class and
+            predict_proba() to calculate the model-estimated
+            probability returned by the FastAPI backend.
+          </p>
+
+        </li>
+
+      </ol>
+
+    </div>
+
+  </section>
+
+
+
+  <section
+    class="about"
+    id="about"
+  >
+
+    <div class="section-inner about-grid">
+
+      <div class="about-copy">
+
+        <h2>
+          About CardioSense
+        </h2>
+
+        <p>
+          CardioSense is a machine learning application built to
+          classify heart disease likelihood from standard
+          cardiovascular measurements. It demonstrates an applied
+          classification workflow, from data preprocessing through
+          model inference.
+        </p>
+
+      </div>
+
+
+      <dl class="tech-list">
+
+        <div class="tech-item">
+
+          <dt>
+            Frontend
+          </dt>
+
+          <dd>
+            HTML / CSS / JavaScript
+          </dd>
+
+        </div>
+
+
+        <div class="tech-item">
+
+          <dt>
+            Backend
+          </dt>
+
+          <dd>
+            FastAPI
+          </dd>
+
+        </div>
+
+
+        <div class="tech-item">
+
+          <dt>
+            Machine Learning
+          </dt>
+
+          <dd>
+            Scikit-learn
+          </dd>
+
+        </div>
+
+
+        <div class="tech-item">
+
+          <dt>
+            Model
+          </dt>
+
+          <dd>
+            Support Vector Machine (SVM)
+          </dd>
+
+        </div>
+
+
+        <div class="tech-item">
+
+          <dt>
+            Preprocessing
+          </dt>
+
+          <dd>
+            StandardScaler
+          </dd>
+
+        </div>
+
+      </dl>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="section-inner footer-inner">
+
+    <div class="footer-brand">
+
+      <span class="brand-name">
+        CardioSense
+      </span>
+
+      <p>
+        Heart Health Assessment
+      </p>
+
+    </div>
+
+
+    <div class="footer-meta">
+
+      <p>
+        HTML · CSS · JavaScript · FastAPI · Scikit-learn
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
