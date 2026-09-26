@@ -1,6 +1,6 @@
 'use strict';
 
-const API_URL = "https://cardiosense-heart-health-prediction.onrender.com/";
+const API_URL = "https://cardiosense-heart-health-prediction.onrender.com/predict";
 
 const NUMERIC_RANGES = {
   age: [18, 100],
